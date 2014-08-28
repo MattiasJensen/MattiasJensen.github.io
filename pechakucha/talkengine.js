@@ -13,11 +13,11 @@ var TalkEngine = {
 		    
 		    TalkEngine.handleResponse(data);
 		  } else {
-		    // We reached our target server, but it returned an error
+		    // We reached our target server, but it returned an error.
 		  }
 		};
 		request.onerror = function() {
-		  // There was a connection error of some sort
+		  // There was a connection error of some sort.
 		};
 		request.send();
 	},
