@@ -90,11 +90,11 @@ body h1 {
 	font-style:normal;
 	height:40px;
 	line-height:40px;
-	min-width:97px;
+	min-width:95px;
 	text-decoration:none;
 	text-align:center;
-    margin-right: 5px;
-    margin-top: 5px;
+    margin-right: 4px;
+    margin-top: 4px;
     border-radius: 2px;
 }
 .filterbtn:hover {
