@@ -22,18 +22,18 @@ var TalkEngine = {
 		request.send();
 	},
 	handleResponse: function(data){
-	    TalkEngine.handleCategories(data.categories, data.siteSettings);
-		TalkEngine.handleTalks(data.talks, null, data.times);
+	    //TalkEngine.handleCategories(data.categories);
+	    console.log(data);
+		TalkEngine.handleTalks(data.talks, data.categories);
 	},
-	handleCategories: function(categories, siteSettings){
+	handleCategories: function(categories){
 		var categoriesWrapper = document.getElementById("js-categories");
 		var clearbtn = document.createElement("button");
-		var heading = document.getElementById("heading");
-		heading.innerHTML = siteSettings[0].headingText;
+		
 		clearbtn.innerHTML = "Alla";
 	    clearbtn.className = "filterbtn";
 		clearbtn.onclick = function () {
-	        TalkEngine.handleTalks(data.talks, null, data.times);
+	        TalkEngine.handleTalks(data.talks, null);
 	    };
 		categoriesWrapper.appendChild(clearbtn);
 		for (var i = 0; i < categories.length; i++) {
@@ -46,7 +46,7 @@ var TalkEngine = {
 			btn.className = "filterbtn";
 
 			btn.onclick = function () {
-			    TalkEngine.handleTalks(data.talks, this.dataset.id, data.times);
+			    TalkEngine.handleTalks(data.talks, this.dataset.id);
 				console.log(this);
 			    //Filter talks by id.
 			}
@@ -54,61 +54,46 @@ var TalkEngine = {
 		    
 		};
 	},
-	handleTalks: function(talks, categoryId, times){
+	handleTalks: function(talks, categories){
 	    var talksWrapper = document.getElementById("js-talks");
 	    talksWrapper.innerHTML = "";
-	    id = categoryId;
-	    console.log(times);
+	    var talklist = document.createElement("ul");
 
-	    for (var k = 0; k < times.length; k++) {
-	        var timeWrapper = document.createElement("div");
-	        var timeTitle = document.createElement("h2");
-	        var timeTitleText = document.createTextNode(times[k].time);
-
-	        timeTitle.appendChild(timeTitleText);
-	        timeWrapper.appendChild(timeTitle);
-	        timeWrapper.className = "timeWrapper";
-	        
-	        for (var i = 0; i < talks.length; i++) {
-	            
-	            var talk = talks[i];
-
-	            var talkdiv = document.createElement("div");
-
-	            var title = document.createElement("h3");
-	            var titletext = document.createTextNode(talk.title);
-
-	            var speaker = document.createElement("p");
-	            var speakertext = document.createTextNode(talk.speaker);
-
-	            var location = document.createElement("p");
-	            var locationtext = document.createTextNode(talk.location);
-	            location.className = "location";
-
-	            title.appendChild(titletext);
-	            speaker.appendChild(speakertext);
-	            location.appendChild(locationtext);
-
-	            talkdiv.appendChild(title);
-	            talkdiv.appendChild(speaker);
-	            talkdiv.appendChild(location);
-	            talkdiv.className = "talkWrapper";
-
-	            if (talk.timeId == times[k].id && (id == null || talk.categoryId == id)) {
-	                timeWrapper.appendChild(talkdiv);
-	            }
-	        };
-
-	        if (timeWrapper.childNodes.length > 1) {
-	            talksWrapper.appendChild(timeWrapper);
-	        }
-	        
-	    }
-
-		
-	},
-	handleTimes: function(times) {
 	    
+	    
+        for (var i = 0; i < talks.length; i++) {
+            
+        	var talk = talks[i];
+        	var li = document.createElement("li");
+
+        	var title = document.createElement("h2");
+        	var titletext = document.createTextNode(talk.title);
+
+        	var talkDetails = document.createElement("div");
+        	talkDetails.className = "talkDetails";
+
+        	var speaker = document.createElement("p");
+            var speakertext = document.createTextNode("By " + talk.speaker + ", " + categories[talk.categoryId].name + " " + talk.country);
+
+            var location = document.createElement("p");
+            var locationtext = document.createTextNode(talk.time + " " + talk.date + " " +talk.location);
+            location.className = "location";
+
+            title.className = categories[talk.categoryId].color;
+            title.appendChild(titletext);
+            speaker.appendChild(speakertext);
+            location.appendChild(locationtext);
+
+            li.appendChild(title);
+            talkDetails.appendChild(speaker);
+            talkDetails.appendChild(location);
+            li.appendChild(talkDetails);
+            talklist.appendChild(li);
+
+
+        };
+        talksWrapper.appendChild(talklist);
+		
 	}
 }
 window.onload = TalkEngine.init;

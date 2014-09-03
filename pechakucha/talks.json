@@ -1,103 +1,34 @@
 {
 	"categories":[
 		{
+			"id": 0,
+			"name": "Tech",
+			"color": "blue"
+		},
+		{
 			"id": 1,
-			"name": "FE"
-		},
-		{
-			"id": 2,
-			"name": "BE"
-		},
-		{
-			"id": 3,
-			"name": "Design"
-		}
-	],
-
-	"siteSettings": [
-		{
-			"headingText": "Talks"			
+			"name": "Finance",
+			"color": "red"
 		}
 	], 
-	
-	"times": [
-		{
-			"id": "1",
-			"time": "10:30 - 10:50"
-		},
-		{
-			"id": "2",
-			"time": "11:00 - 11:20"
-		},
-		{
-			"id": "3",
-			"time": "11:30 - 11:50"
-		}
-	], 
-	 
 	"talks": [
 		{
-			"categoryId": 1,
+			"categoryId": 0,
 			"title": "Arbeta med prototyper",
 			"speaker": "Samuel",
-			"location": "Rum 1",
-			"timeId": 1
+			"time": "10.00-10.10",
+			"date": "SEP 20",
+			"location": "Room 11",
+			"country": "Sweden"
 		},
 		{
 			"categoryId": 1,
-			"title": "Arbeta med prototyper",
-			"speaker": "Samuel",
-			"location": "Rum 1",
-			"timeId": 1
-		},
-		{
-			"categoryId": 3,
-			"title": "Arbeta med design",
-			"speaker": "Samuel",
-			"location": "Rum 1",
-			"timeId": 1
-		},
-		{
-			"categoryId": 3,
-			"title": "Designa med prototyper",
-			"speaker": "Samuel",
-			"location": "Rum 1",
-			"timeId": 3
-		},
-		{
-			"categoryId": 1,
-			"title": "Arbeta med prototyper",
-			"speaker": "Samuel",
-			"location": "Rum 1",
-			"timeId": 3
-		},
-		{
-			"categoryId": 2,
-			"title": "Hejsan",
-			"speaker": "Samuel",
-			"location": "Rum 1",
-			"timeId": 1
-		},
-		{
-			"categoryId": 1,
-			"title": "Front end Lindy hop",
-			"speaker": "Robert",
-			"location": "Rum 4",
-			"timeId": 2
-		},
-		{
-			"categoryId": 2,
-			"title": "Bullshit",
-			"speaker": "Pelle",
-			"location": "Rum 2",
-			"timeId": 1
-		},
-		{
-			"categoryId": 2,
-			"title": "Salsa",
-			"speaker": "Mattias",
-			"location": "Rum 3",
-			"timeId": 2
+			"title": "The Zen of time reporting",
+			"speaker": "Magnus Sundberg",
+			"time": "10.00-10.10",
+			"date": "SEP 20",
+			"location": "Room 11",
+			"country": "Sweden"
 		}
 	]
 }
