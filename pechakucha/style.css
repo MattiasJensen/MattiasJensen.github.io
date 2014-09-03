@@ -87,6 +87,8 @@ body{
 	font-weight: 600;
 }
 #js-talks ul li h2:before{
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
 	border-radius: 100%;
 	content: '';
 	display: inline-block;
