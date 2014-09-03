@@ -9,6 +9,11 @@
 			"id": 1,
 			"name": "Finance",
 			"color": "red"
+		},
+		{
+			"id": 2,
+			"name": "Marketing",
+			"color": "green"
 		}
 	], 
 	"talks": [
@@ -29,6 +34,24 @@
 			"date": "SEP 20",
 			"location": "Room 11",
 			"country": "Sweden"
+		},
+		{
+			"categoryId": 2,
+			"title": "It's more fun to compute!",
+			"speaker": "Martin Deinoff",
+			"time": "10.00-10.10",
+			"date": "SEP 20",
+			"location": "Room 11",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 0,
+			"title": "It' the end of the world as we know it!",
+			"speaker": "Jesper Boeg",
+			"time": "10.00-10.10",
+			"date": "SEP 20",
+			"location": "Room 11",
+			"country": "Denmark"
 		}
 	]
 }

@@ -100,6 +100,13 @@ h2.blue:before{
 h2.red:before{
 	background: #ed1c24;
 }
+h2.green:before{
+	background: #00a651;
+}
+h2.yellow:before{
+	background: #f9cf1b;
+}
+
 .talkDetails{
 	font-weight: 300;
 	line-height: 1.3em;
