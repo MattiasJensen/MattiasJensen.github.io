@@ -1,6 +1,24 @@
 var TalkEngine = {
 	init: function(){
 		TalkEngine.getJSONData();
+		TalkEngine.toggleNav();
+	},
+	toggleNav: function(){
+		var filterTrigger = document.getElementById("js-filter-trigger");
+		var hideFilter = document.getElementById("hide-filter")
+		var filter = document.getElementById("filter");
+
+		hideFilter.onclick = function(e){
+			e.preventDefault();
+			var className = "filter-active";
+			TalkEngine.toggleClass(className);
+		};
+
+		filterTrigger.onclick = function(e){
+			e.preventDefault();
+			var className = "filter-active";
+			TalkEngine.toggleClass(className);
+		};
 	},
 	getJSONData: function(){
 
@@ -22,37 +40,26 @@ var TalkEngine = {
 		request.send();
 	},
 	handleResponse: function(data){
-	    //TalkEngine.handleCategories(data.categories);
-	    console.log(data);
+
+	    TalkEngine.handleCategories(data.categories);
 		TalkEngine.handleTalks(data.talks, data.categories);
 	},
 	handleCategories: function(categories){
 		var categoriesWrapper = document.getElementById("js-categories");
-		var clearbtn = document.createElement("button");
-		
-		clearbtn.innerHTML = "Alla";
-	    clearbtn.className = "filterbtn";
-		clearbtn.onclick = function () {
-	        TalkEngine.handleTalks(data.talks, null);
-	    };
-		categoriesWrapper.appendChild(clearbtn);
+
 		for (var i = 0; i < categories.length; i++) {
-		    
 			var category = categories[i];
 			var btn = document.createElement("button");
 			var btnText = document.createTextNode(category.name);
-			btn.appendChild(btnText);
 			btn.setAttribute("data-id", category.id);
-			btn.className = "filterbtn";
+			btn.className = "filter-btn " + category.color;
+			btn.appendChild(btnText);
 
 			btn.onclick = function () {
-			    TalkEngine.handleTalks(data.talks, this.dataset.id);
-				console.log(this);
-			    //Filter talks by id.
+			    //TalkEngine.handleTalks(data.talks, categories, this.dataset.id); 
 			}
 			categoriesWrapper.appendChild(btn);
-		    
-		};
+		}
 	},
 	handleTalks: function(talks, categories){
 	    var talksWrapper = document.getElementById("js-talks");
@@ -94,6 +101,25 @@ var TalkEngine = {
         };
         talksWrapper.appendChild(talklist);
 		
+	},
+	toggleClass: function(className){
+		
+		var body = document.body;
+
+		if (body.classList) {
+			body.classList.toggle(className);
+		} else {
+			var classes = body.className.split(' ');
+			var existingIndex = classes.indexOf(className);
+
+			if (existingIndex >= 0){
+				classes.splice(existingIndex, 1);
+			}else{
+				classes.push(className);	
+			}
+			
+			body.className = classes.join(' ');
+		}
 	}
 }
 window.onload = TalkEngine.init;

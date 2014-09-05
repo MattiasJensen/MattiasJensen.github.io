@@ -44,8 +44,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 body{
 	font-family: 'Source Sans Pro', sans-serif;
+	overflow-x: hidden;
 }
 #main-header{
 	background: #34a5dd;
@@ -56,7 +58,7 @@ body{
 .svg-icon{
 	display: inline-block;
 }
-.svg-icon svg{
+.svg-icon img{
 	width: 3.75em;
 	height: 3.75em;
 }
@@ -118,3 +120,81 @@ h2.yellow:before{
 	text-transform: uppercase;
 	font-weight: 400;
 }
+#js-filter-trigger{
+	float: right;
+	margin-top: 0.8em;
+}
+#hide-filter{
+	color: #fff;
+	display: block;
+	float: left;
+	font-size: 3em;
+	padding-top: 0.2em;
+	padding-left: 10%;
+}
+#hide-filter:hover{
+	cursor: pointer;
+}
+.filter-content{
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+#filter {
+	text-align: center;
+	background: #34a5dd;
+    position: fixed;
+    z-index: 20;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#filter.slide-menu-right {
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#filter.slide-menu-right {
+    right: -100%;
+}
+body.filter-active #filter.slide-menu-right {
+    right: 0
+}
+.filter-btn{
+	background: #f6f5f5;
+	border: 0;
+	color: #fff;
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em;
+	margin: 0.625em auto;
+	padding: 0.625em;
+	width: 80%;
+	-webkit-appearance: none;
+}
+.filter-btn:hover{
+	cursor: pointer;
+}
+.filter-btn:focus{
+	box-shadow: 0 0 0 !important;
+}
+.filter-btn.blue{
+	background: #4690cd;
+	box-shadow: 3px 3px 0 #1A364D;
+}
+.filter-btn.red{
+	background: #ed1c24;
+	box-shadow: 3px 3px 0 #6D0D11;
+}
+.filter-btn.green{
+	background: #00a651;
+	box-shadow: 3px 3px 0 #006632;
+}
+.filter-btn.yellow{
+	background: #f9cf1b;
+	box-shadow: 3px 3px 0 #B99A14;
+}
+
