@@ -88,6 +88,7 @@ body{
 #js-talks ul li h2{
 	font-weight: 600;
 }
+.filter-btn:before,
 #js-talks ul li h2:before{
 	-moz-border-radius: 100%;
 	-webkit-border-radius: 100%;
@@ -98,15 +99,26 @@ body{
 	height: 0.75em;
 	width: 0.75em;
 }
+.filter-btn:before{
+	position: relative;
+	top: -4px;
+	height: 0.4em;
+	width: 0.4em;
+	margin: 0 0.3em 0 0;
+}
+.filter-btn.blue:before,
 h2.blue:before{
 	background: #4690cd;
 }
+.filter-btn.red:before,
 h2.red:before{
 	background: #ed1c24;
 }
+.filter-btn.green:before,
 h2.green:before{
 	background: #00a651;
 }
+.filter-btn.yellow:before,
 h2.yellow:before{
 	background: #f9cf1b;
 }
@@ -125,24 +137,25 @@ h2.yellow:before{
 	margin-top: 0.8em;
 }
 #hide-filter{
-	color: #fff;
 	display: block;
-	float: left;
+	float: right;
 	font-size: 3em;
-	padding-top: 0.2em;
-	padding-left: 10%;
+	padding-top: 0.4em;
+	padding-right: 0.4em;
 }
 #hide-filter:hover{
 	cursor: pointer;
 }
 .filter-content{
-	float: left;
+	box-sizing: border-box;
 	height: 100%;
+	float: left;
+	padding: 1.25em;
 	width: 100%;
 }
 #filter {
 	text-align: center;
-	background: #34a5dd;
+	background: #fff;
     position: fixed;
     z-index: 20;
     overflow: hidden;
@@ -163,38 +176,13 @@ h2.yellow:before{
 body.filter-active #filter.slide-menu-right {
     right: 0
 }
+.filter-content ul li{
+	text-align: right;
+}
 .filter-btn{
-	background: #f6f5f5;
-	border: 0;
-	color: #fff;
-	display: block;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1em;
-	margin: 0.625em auto;
-	padding: 0.625em;
-	width: 80%;
-	-webkit-appearance: none;
+	color: #000;
+	display: inline-block;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 0.3em 0;
 }
-.filter-btn:hover{
-	cursor: pointer;
-}
-.filter-btn:focus{
-	box-shadow: 0 0 0 !important;
-}
-.filter-btn.blue{
-	background: #4690cd;
-	box-shadow: 3px 3px 0 #1A364D;
-}
-.filter-btn.red{
-	background: #ed1c24;
-	box-shadow: 3px 3px 0 #6D0D11;
-}
-.filter-btn.green{
-	background: #00a651;
-	box-shadow: 3px 3px 0 #006632;
-}
-.filter-btn.yellow{
-	background: #f9cf1b;
-	box-shadow: 3px 3px 0 #B99A14;
-}
-

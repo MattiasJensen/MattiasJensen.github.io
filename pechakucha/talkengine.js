@@ -46,11 +46,14 @@ var TalkEngine = {
 	},
 	handleCategories: function(categories){
 		var categoriesWrapper = document.getElementById("js-categories");
+		var filteList = document.createElement("ul");
 
 		for (var i = 0; i < categories.length; i++) {
 			var category = categories[i];
-			var btn = document.createElement("button");
+			var li = document.createElement("li");
+			var btn = document.createElement("a");
 			var btnText = document.createTextNode(category.name);
+			btn.href = "#";
 			btn.setAttribute("data-id", category.id);
 			btn.className = "filter-btn " + category.color;
 			btn.appendChild(btnText);
@@ -58,7 +61,9 @@ var TalkEngine = {
 			btn.onclick = function () {
 			    //TalkEngine.handleTalks(data.talks, categories, this.dataset.id); 
 			}
-			categoriesWrapper.appendChild(btn);
+			li.appendChild(btn);
+			filteList.appendChild(li);
+			categoriesWrapper.appendChild(filteList);
 		}
 	},
 	handleTalks: function(talks, categories){
