@@ -2,60 +2,88 @@
 	"categories":[
 		{
 			"id": 0,
+			"name": "Front-end",
+			"color": "red"
+		},
+		{
+			"id": 1,
+			"name": "Insight & Analytics",
+			"color": "green"
+		},
+		{
+			"id": 2,
 			"name": "Tech",
 			"color": "blue"
 		},
 		{
-			"id": 1,
-			"name": "Finance",
-			"color": "red"
-		},
-		{
-			"id": 2,
-			"name": "Marketing",
-			"color": "green"
-		},
-		{
 			"id": 3,
-			"name": "UX",
+			"name": "Visual",
 			"color": "yellow"
+		},
+		{
+			"id": 4,
+			"name": "ID/UX",
+			"color": "purple"
+		},
+		{
+			"id": 5,
+			"name": "PM",
+			"color": "pink"
 		}
 	], 
 	"talks": [
 		{
 			"categoryId": 0,
-			"title": "Arbeta med prototyper",
-			"speaker": "Samuel",
-			"time": "10.00-10.10",
+			"title": "Coping with Images",
+			"speaker": "Flemming Steinson",
+			"time": "10.15-10.40",
 			"date": "SEP 20",
-			"location": "Room 11",
-			"country": "Sweden"
+			"location": "Room X",
+			"country": "Denmark"
 		},
 		{
 			"categoryId": 1,
-			"title": "The Zen of time reporting",
-			"speaker": "Magnus Sundberg",
-			"time": "10.00-10.10",
+			"title": "How to visualize KPIs - Klipfoliog",
+			"speaker": "Cederlöf & Folke",
+			"time": "10.15-10.40",
 			"date": "SEP 20",
-			"location": "Room 11",
+			"location": "Room X",
 			"country": "Sweden"
 		},
 		{
 			"categoryId": 2,
-			"title": "It's more fun to compute!",
-			"speaker": "Martin Deinoff",
-			"time": "10.00-10.10",
+			"title": "Facilitating custom business processes using a Rule Engine",
+			"speaker": "Skevik & Hochlin",
+			"time": "10.15-10.40",
 			"date": "SEP 20",
-			"location": "Room 11",
-			"country": "Sweden"
+			"location": "Rum X",
+			"country": "Norway"
 		},
 		{
-			"categoryId": 0,
-			"title": "It' the end of the world as we know it!",
-			"speaker": "Jesper Boeg",
-			"time": "10.00-10.10",
+			"categoryId": 3,
+			"title": "Stand out – with a consistent tone of voice",
+			"speaker": "Børresen & Vennevold",
+			"time": "10.15-10.40",
 			"date": "SEP 20",
-			"location": "Room 11",
+			"location": "Room X",
+			"country": "Norway"
+		},
+		{
+			"categoryId": 4,
+			"title": "Prototyping- proces på Rudersdal kommunes website",
+			"speaker": "Fraas & Kawa",
+			"time": "10.15-10.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Denmark"
+		},
+		{
+			"categoryId": 5,
+			"title": "Making the case for Shared Risk Contracts",
+			"speaker": "Jesper Boeg",
+			"time": "10.15-10.40",
+			"date": "SEP 20",
+			"location": "Room X",
 			"country": "Denmark"
 		}
 	]

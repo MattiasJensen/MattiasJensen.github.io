@@ -122,6 +122,19 @@ h2.green:before{
 h2.yellow:before{
 	background: #f9cf1b;
 }
+/* undetermined colors */
+.filter-btn.pink:before,
+h2.pink:before{
+	background: pink;
+}
+.filter-btn.purple:before,
+h2.purple:before{
+	background: purple;
+}
+.filter-btn.orange:before,
+h2.orange:before{
+	background: orange;
+}
 
 .talkDetails{
 	font-weight: 300;
@@ -158,13 +171,16 @@ h2.yellow:before{
 	background: #fff;
     position: fixed;
     z-index: 20;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
 #filter.slide-menu-right {
     top: 0;
     width: 100%;
@@ -182,7 +198,7 @@ body.filter-active #filter.slide-menu-right {
 .filter-btn{
 	color: #000;
 	display: inline-block;
-	font-size: 3em;
+	font-size: 2em;
 	text-decoration: none;
 	padding: 0.3em 0;
 }
