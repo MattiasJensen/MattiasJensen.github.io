@@ -58,19 +58,21 @@ var TalkEngine = {
 			btn.className = "filter-btn " + category.color;
 			btn.appendChild(btnText);
 
-			btn.onclick = function () {
-			    //TalkEngine.handleTalks(data.talks, categories, this.dataset.id); 
+			btn.onclick = function (e) {
+				e.preventDefault();
+			    TalkEngine.handleTalks(data.talks, categories, this.dataset.id);
+			    TalkEngine.toggleClass("filter-active");	 
 			}
 			li.appendChild(btn);
 			filteList.appendChild(li);
 			categoriesWrapper.appendChild(filteList);
 		}
 	},
-	handleTalks: function(talks, categories){
+	handleTalks: function(talks, categories, id){
 	    var talksWrapper = document.getElementById("js-talks");
 	    talksWrapper.innerHTML = "";
 	    var talklist = document.createElement("ul");
-
+	    var categoryTalkList = document.createElement("ul");
 	    
 	    
         for (var i = 0; i < talks.length; i++) {
@@ -91,6 +93,8 @@ var TalkEngine = {
             var locationtext = document.createTextNode(talk.time + " " + talk.date + " " +talk.location);
             location.className = "location";
 
+           
+        
             title.className = categories[talk.categoryId].color;
             title.appendChild(titletext);
             speaker.appendChild(speakertext);
@@ -100,15 +104,27 @@ var TalkEngine = {
             talkDetails.appendChild(speaker);
             talkDetails.appendChild(location);
             li.appendChild(talkDetails);
-            talklist.appendChild(li);
+            
 
+            if(typeof id === 'undefined'){
+				talklist.appendChild(li);
+			}else{
+				if(talk.categoryId == id){
+            		categoryTalkList.appendChild(li);
+            	}
+			}
 
         };
-        talksWrapper.appendChild(talklist);
+       
+        if(talklist.children.length){
+        	talksWrapper.appendChild(talklist);
+        }else if(categoryTalkList.children.length){
+        	talksWrapper.appendChild(categoryTalkList);
+        }
+        
 		
 	},
 	toggleClass: function(className){
-		
 		var body = document.body;
 
 		if (body.classList) {
