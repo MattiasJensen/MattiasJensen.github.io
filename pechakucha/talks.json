@@ -28,7 +28,12 @@
 		{
 			"id": 5,
 			"name": "PM",
-			"color": "pink"
+			"color": "brown"
+		},
+		{
+			"id": 6,
+			"name": "Branding",
+			"color": "orange"
 		}
 	], 
 	"talks": [
@@ -85,6 +90,255 @@
 			"date": "SEP 20",
 			"location": "Room X",
 			"country": "Denmark"
+		},
+		{
+			"categoryId": 6,
+			"title": "A look into the future - google glass",
+			"speaker": "Nordal Sylte & Eskild",
+			"time": "10.15-10.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Norway"
+		},
+
+		{
+			"categoryId": 0,
+			"title": "Tillgänglighet",
+			"speaker": "Isac or Ida",
+			"time": "10.45-11.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 1,
+			"title": "How to set up a sustainable KPI framework that works",
+			"speaker": "Cederlöf & Folke",
+			"time": "10.45-11.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 2,
+			"title": "Code Reviews - the good, the bad and the ugly code",
+			"speaker": "Peter Korsbäck",
+			"time": "10.45-11.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 3,
+			"title": "Time to say goodbye to Photoshop?",
+			"speaker": "Erik Friberg",
+			"time": "10.45-11.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 4,
+			"title": "Något om Service Design från Norge/(Nxo)",
+			"speaker": "TBA",
+			"time": "10.45-11.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Norway"
+		},
+		{
+			"categoryId": 5,
+			"title": "Everybody is a salesman",
+			"speaker": "Lonitz & Lyreskog",
+			"time": "10.45-11.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 6,
+			"title": "Advertising – it used to be a good idea",
+			"speaker": "Anders Aunbu",
+			"time": "10.45-11.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Norway"
+		},
+
+		{
+			"categoryId": 1,
+			"title": "Datavisualisering",
+			"speaker": "Robert Børlum-Bach",
+			"time": "11.15-11.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Denmark"
+		},
+		{
+			"categoryId": 2,
+			"title": "Test and test automatization",
+			"speaker": "Aliye Furunzhyieva",
+			"time": "11.15-11.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 3,
+			"title": "The endless possibilities of PowerPoint",
+			"speaker": "Hans Haugli",
+			"time": "11.15-11.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Norway"
+		},
+		{
+			"categoryId": 4,
+			"title": "Emotions in UX, the embryo of new business?",
+			"speaker": "Therese Glimskär",
+			"time": "11.15-11.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 5,
+			"title": "Wicked Problems",
+			"speaker": "Ole Morten Damlien",
+			"time": "11.15-11.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Norway"
+		},
+		{
+			"categoryId": 6,
+			"title": "Experiences from Statoil",
+			"speaker": "Michael Ericsson",
+			"time": "11.15-11.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Sweden"
+		},
+
+		{
+			"categoryId": 0,
+			"title": "Design and technology. A creative team on steroids",
+			"speaker": "Jonas Fredin",
+			"time": "11.45-12.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Norway"
+		},
+		{
+			"categoryId": 2,
+			"title": "How to handle EPiCommerce",
+			"speaker": "Janne Tuutti",
+			"time": "11.45-12.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Finland"
+		},
+		{
+			"categoryId": 3,
+			"title": "Exploring imaginary universes with 3D-tools",
+			"speaker": "Sebastian Reed",
+			"time": "11.45-12.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Norway"
+		},
+		{
+			"categoryId": 4,
+			"title": "Three signs saying that you’re working on a service design project (and one that you’re not)",
+			"speaker": "Jacob Palicki",
+			"time": "11.45-12.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 5,
+			"title": "Drop the estimate tyranny and get more motivated Creuna employees and increased predictability",
+			"speaker": "Jesper Boeg",
+			"time": "11.45-12.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Denmark"
+		},
+		{
+			"categoryId": 6,
+			"title": "Brand and user experience – a love story",
+			"speaker": "Torbjørn Sitre",
+			"time": "11.45-12.10",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Norway"
+		},
+
+		{
+			"categoryId": 0,
+			"title": "Best practice processes and devOps",
+			"speaker": "Pelle Bjerkestrand",
+			"time": "12.15-12.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Norway"
+		},
+		{
+			"categoryId": 1,
+			"title": "Unknown",
+			"speaker": "Thor Fjeldberg",
+			"time": "12.15-12.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Norway"
+		},
+		{
+			"categoryId": 2,
+			"title": "Building Spotify Intranet with Django",
+			"speaker": "Matti Kotsalainen",
+			"time": "12.15-12.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 3,
+			"title": "Spotify om visuell design och kreativitet intranät",
+			"speaker": "FM",
+			"time": "12.15-12.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 4,
+			"title": "The meaning of the word",
+			"speaker": "Bakke & Nausthaug",
+			"time": "12.15-12.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Norway"
+		},
+		{
+			"categoryId": 5,
+			"title": "High Level Project Management (evil clients) How to be evil without being bad",
+			"speaker": "Christer Lybeck",
+			"time": "12.15-12.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Finland"
+		},
+		{
+			"categoryId": 6,
+			"title": "Meeting empowered B2B-customers with digital services",
+			"speaker": "Elkjær & Okkels",
+			"time": "12.15-12.40",
+			"date": "SEP 20",
+			"location": "Room X",
+			"country": "Denmark"
 		}
+
+
 	]
 }

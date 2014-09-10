@@ -127,9 +127,9 @@ h2.yellow:before{
 	background: #f9cf1b;
 }
 /* undetermined colors */
-.filter-btn.pink:before,
-h2.pink:before{
-	background: pink;
+.filter-btn.brown:before,
+h2.brown:before{
+	background: #663300;
 }
 .filter-btn.purple:before,
 h2.purple:before{
