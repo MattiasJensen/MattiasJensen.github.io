@@ -30,13 +30,9 @@ var TalkEngine = {
 		    data = JSON.parse(request.responseText);
 		    
 		    TalkEngine.handleResponse(data);
-		  } else {
-		    // We reached our target server, but it returned an error.
 		  }
 		};
-		request.onerror = function() {
-		  // There was a connection error of some sort.
-		};
+		request.onerror = function() {};
 		request.send();
 	},
 	handleResponse: function(data){
@@ -73,7 +69,7 @@ var TalkEngine = {
 	    talksWrapper.innerHTML = "";
 	    var talklist = document.createElement("ul");
 	    var categoryTalkList = document.createElement("ul");
-	    
+	    var timeslots = data.timeslots;
 	    
         for (var i = 0; i < talks.length; i++) {
             
@@ -90,7 +86,7 @@ var TalkEngine = {
             var speakertext = document.createTextNode("By " + talk.speaker + ", " + categories[talk.categoryId].name + " " + talk.country);
 
             var location = document.createElement("p");
-            var locationtext = document.createTextNode(talk.time + " " + talk.date + " " +talk.location);
+            var locationtext = document.createTextNode(timeslots[talk.timeId].time + " " + talk.date + " " +talk.location);
             location.className = "location";
 
            
@@ -113,6 +109,8 @@ var TalkEngine = {
             		categoryTalkList.appendChild(li);
             	}
 			}
+
+			
 
         };
        
