@@ -209,6 +209,7 @@ body.filter-active #filter.slide-menu-right {
 	padding: 0.3em 0;
 }
 .timeslotHeading{
+	box-sizing: border-box;
 	font-size: 1.4em;
-	padding: 1em 1.25em 1.25em 1.25em;
+	padding: 1em 1.25em 1.25em 0.8em;
 }
