@@ -206,3 +206,7 @@ body.filter-active #filter.slide-menu-right {
 	text-decoration: none;
 	padding: 0.3em 0;
 }
+.timeslotHeading{
+	font-size: 1.4em;
+	padding: 1em 1.25em 1.25em 1.25em;
+}

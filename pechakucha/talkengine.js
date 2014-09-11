@@ -38,6 +38,7 @@ var TalkEngine = {
 	handleResponse: function(data){
 
 	    TalkEngine.handleCategories(data.categories);
+	    TalkEngine.createTimeSlots(data.timeslots);
 		TalkEngine.handleTalks(data.talks, data.categories);
 	},
 	handleCategories: function(categories){
@@ -66,10 +67,10 @@ var TalkEngine = {
 	},
 	handleTalks: function(talks, categories, id){
 	    var talksWrapper = document.getElementById("js-talks");
-	    talksWrapper.innerHTML = "";
 	    var talklist = document.createElement("ul");
 	    var categoryTalkList = document.createElement("ul");
 	    var timeslots = data.timeslots;
+
 	    
         for (var i = 0; i < talks.length; i++) {
             
@@ -87,9 +88,7 @@ var TalkEngine = {
 
             var location = document.createElement("p");
             var locationtext = document.createTextNode(timeslots[talk.timeId].time + " " + talk.date + " " +talk.location);
-            location.className = "location";
-
-           
+            location.className = "location";           
         
             title.className = categories[talk.categoryId].color;
             title.appendChild(titletext);
@@ -101,26 +100,76 @@ var TalkEngine = {
             talkDetails.appendChild(location);
             li.appendChild(talkDetails);
             
+		
 
-            if(typeof id === 'undefined'){
-				talklist.appendChild(li);
+			if(typeof id === 'undefined'){
+
+				switch(talk.timeId){
+					case 0:
+						var wrapper = document.getElementById("timeslot-0");
+						var testlist = document.createElement("ul");
+						break;
+					case 1:
+						var wrapper = document.getElementById("timeslot-1");
+						var testlist = document.createElement("ul");
+						break;
+					case 2:
+						var wrapper = document.getElementById("timeslot-2");
+						var testlist = document.createElement("ul");
+						break;
+					case 3:
+						var wrapper = document.getElementById("timeslot-3");
+						var testlist = document.createElement("ul");
+						break;
+					case 4:
+						var wrapper = document.getElementById("timeslot-4");
+						var testlist = document.createElement("ul");
+						break;
+				}
+
+				testlist.appendChild(li);
+				wrapper.appendChild(testlist);
 			}else{
 				if(talk.categoryId == id){
             		categoryTalkList.appendChild(li);
             	}
 			}
 
-			
-
         };
        
-        if(talklist.children.length){
-        	talksWrapper.appendChild(talklist);
-        }else if(categoryTalkList.children.length){
+        if(categoryTalkList.children.length){
+        	talksWrapper.innerHTML = "";
         	talksWrapper.appendChild(categoryTalkList);
         }
         
 		
+	},
+	createTimeSlots: function(timeslots){
+
+		var talksWrapper = document.getElementById("js-talks");
+		talksWrapper.innerHTML = "";
+
+		for (var i = 0; i < timeslots.length; i++) {
+			var wrapper = document.createElement("div");
+			var heading = document.createElement("h2");
+			heading.className = "timeslotHeading";
+			heading.innerHTML = timeslots[i].time;
+			wrapper.id = "timeslot-" + timeslots[i].id;
+			wrapper.appendChild(heading);
+			talksWrapper.appendChild(wrapper);
+		};
+
+
+	},
+	getElementsWithAttribute: function(attribute){
+		var matchingElements = [];
+		var allElements = document.getElementsByTagName('*');
+		for (var i = 0, n = allElements.length; i < n; i++){
+			if (allElements[i].getAttribute(attribute)){
+				matchingElements.push(allElements[i]);
+			}
+		}
+		return matchingElements;
 	},
 	toggleClass: function(className){
 		var body = document.body;
