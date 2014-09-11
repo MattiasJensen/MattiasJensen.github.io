@@ -91,6 +91,7 @@ body{
 }
 #js-talks ul li h2{
 	font-weight: 600;
+	margin-left: 20px;	
 }
 .filter-btn:before,
 #js-talks ul li h2:before{
@@ -99,7 +100,8 @@ body{
 	border-radius: 100%;
 	content: '';
 	display: inline-block;
-	margin: 0 0.5em 0 0;
+	margin-right: 0.5em;
+	margin-left: -20px;
 	height: 0.75em;
 	width: 0.75em;
 }
