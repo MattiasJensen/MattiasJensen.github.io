@@ -82,7 +82,7 @@
 		},
 		{
 			"categoryId": 2,
-			"title": "Facilitating custom business processes using a Rule Engine",
+			"title": "Unleashing the full potential of a Rule Engine",
 			"speaker": "Skevik & Hochlin",
 			"timeId": 0,
 			"time": "10.15-10.40",
@@ -102,7 +102,7 @@
 		},
 		{
 			"categoryId": 4,
-			"title": "Prototyping- proces på Rudersdal kommunes website",
+			"title": "Responsive prototype for Rudersdal Municipality",
 			"speaker": "Fraas & Kawa",
 			"timeId": 0,
 			"time": "10.15-10.40",
@@ -173,7 +173,7 @@
 		},
 		{
 			"categoryId": 4,
-			"title": "Service Design: differentiate or die",
+			"title": "Service design: Differentiate or die",
 			"speaker": "Erlend Hovgaard",
 			"timeId": 1,
 			"time": "10.45-11.10",
@@ -224,7 +224,7 @@
 		},
 		{
 			"categoryId": 3,
-			"title": "The endless possibilities of PowerPoint or the power of the Creuna template",
+			"title": "The endless possibilities of PowerPoint. Creuna’s PPT-template unleashed",
 			"speaker": "Hans Haugli",
 			"timeId": 2,
 			"time": "11.15-11.40",
@@ -275,7 +275,7 @@
 		},
 		{
 			"categoryId": 2,
-			"title": "How to handle EPiCommerce",
+			"title": "EPiServer Commerce, the Hard Way",
 			"speaker": "Janne Tuutti",
 			"timeId": 3,
 			"time": "11.45-12.10",
@@ -336,7 +336,7 @@
 		},
 		{
 			"categoryId": 2,
-			"title": "Building Spotify Intranet with Django",
+			"title": "Django - The Web framework for perfectionists with deadlines",
 			"speaker": "Matti Kotsalainen",
 			"timeId": 4,
 			"time": "12.15-12.40",
