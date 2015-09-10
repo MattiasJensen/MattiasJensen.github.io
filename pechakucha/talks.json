@@ -25,364 +25,339 @@
 	"categories":[
 		{
 			"id": 0,
-			"name": "Front-end",
+			"name": "E-commerce",
 			"color": "red"
 		},
 		{
 			"id": 1,
-			"name": "Insight & Analytics",
-			"color": "green"
+			"name": "User/customer experience",
+			"color": "purple"
 		},
 		{
 			"id": 2,
-			"name": "Tech",
+			"name": "Technology",
 			"color": "blue"
 		},
 		{
 			"id": 3,
-			"name": "Visual",
+			"name": "Branding and communication",
 			"color": "yellow"
 		},
 		{
 			"id": 4,
-			"name": "ID/UX",
-			"color": "purple"
+			"name": "Insight & Analytics",
+			"color": "green"
 		},
 		{
 			"id": 5,
-			"name": "PM",
+			"name": "Advisory School",
 			"color": "brown"
-		},
-		{
-			"id": 6,
-			"name": "Branding",
-			"color": "orange"
 		}
 	], 
 	"talks": [
 		{
 			"categoryId": 0,
-			"title": "Coping with Images",
-			"speaker": "Flemming Steinson",
+			"title": "Prototyping an eCommerce vision at Vestas",
+			"speaker": "Morten Barkholt & Lene Thirup",
 			"timeId": 0,
 			"time": "10.15-10.40",
-			"date": "SEP 13",
-			"location": "Grupperom 1",
+			"date": "SEP 12",
+			"location": "Skåtøy 1 ",
 			"country": "Denmark"
 		},
 		{
 			"categoryId": 1,
-			"title": "How to set up a sustainable KPI framework that works",
-			"speaker": "Cederlöf & Folke",
+			"title": "Value Proposition Canvas",
+			"speaker": "Stein Sørlie & Hilde Marken",
 			"timeId": 0,
 			"time": "10.15-10.40",
-			"date": "SEP 13",
-			"location": "Grupperom 2",
-			"country": "Sweden"
-		},
-		{
-			"categoryId": 2,
-			"title": "Unleashing the full potential of a Rule Engine",
-			"speaker": "Skevik & Hochlin",
-			"timeId": 0,
-			"time": "10.15-10.40",
-			"date": "SEP 13",
-			"location": "Skåtøy 1",
+			"date": "SEP 12",
+			"location": "Skåtøy 2",
 			"country": "Norway"
 		},
 		{
-			"categoryId": 3,
-			"title": "Stand out – with a consistent tone of voice",
-			"speaker": "Børresen & Vennevold",
+			"categoryId": 2,
+			"title": "Connection lost... F#*k",
+			"speaker": "Jakob Dam Jensen",
 			"timeId": 0,
 			"time": "10.15-10.40",
-			"date": "SEP 13",
+			"date": "SEP 12",
 			"location": "Rødskjær",
+			"country": "Denmark"
+		},
+		{
+			"categoryId": 3,
+			"title": "How to stand out in a saturated market - L/L Voss Fellesbryggeri, Norway’s 120th microbrewery",
+			"speaker": "Stein Øvre & Marc Ligeti",
+			"timeId": 0,
+			"time": "10.15-10.40",
+			"date": "SEP 12",
+			"location": "Suite 106",
 			"country": "Norway"
 		},
 		{
 			"categoryId": 4,
-			"title": "Responsive prototype for Rudersdal Municipality",
-			"speaker": "Fraas & Kawa",
+			"title": "HotJar: a swizz pocket knife for analysts and ux'ers.",
+			"speaker": "Ingrid Hålang & Thor Fjeldberg",
 			"timeId": 0,
 			"time": "10.15-10.40",
-			"date": "SEP 13",
+			"date": "SEP 12",
 			"location": "Suite 301",
-			"country": "Denmark"
+			"country": "Norway"
 		},
 		{
 			"categoryId": 5,
-			"title": "Making the case for Shared Risk Contracts",
-			"speaker": "Jesper Boeg",
+			"title": "Consulting academy",
+			"speaker": "Henrik Bakke",
 			"timeId": 0,
 			"time": "10.15-10.40",
-			"date": "SEP 13",
-			"location": "Suite 106",
-			"country": "Denmark"
-		},
-		{
-			"categoryId": 6,
-			"title": "A look into the future - google glass",
-			"speaker": "Nordal Sylte & Eskild",
-			"timeId": 0,
-			"time": "10.15-10.40",
-			"date": "SEP 13",
-			"location": "Skåtøy 2",
+			"date": "SEP 12",
+			"location": "Grupperom 1",
 			"country": "Norway"
 		},
 
 		{
 			"categoryId": 0,
-			"title": "Accessibility from Alex point of view",
-			"speaker": "Isac Lagerblad",
+			"title": "Now it's getting personal",
+			"speaker": "Nikolaj Opstrup",
 			"timeId": 1,
 			"time": "10.45-11.10",
-			"date": "SEP 13",
-			"location": "Grupperom 1",
-			"country": "Sweden"
-		},
-		{
-			"categoryId": 1,
-			"title": "How to visualize KPIs – Klipfolio",
-			"speaker": "Cederlöf & Folke",
-			"timeId": 1,
-			"time": "10.45-11.10",
-			"date": "SEP 13",
-			"location": "Grupperom 2",
-			"country": "Sweden"
-		},
-		{
-			"categoryId": 2,
-			"title": "Code Reviews - the good, the bad and the ugly code",
-			"speaker": "Peter Korsbäck",
-			"timeId": 1,
-			"time": "10.45-11.10",
-			"date": "SEP 13",
+			"date": "SEP 12",
 			"location": "Skåtøy 1",
-			"country": "Sweden"
+			"country": "Denmark"
 		},
-		{
-			"categoryId": 3,
-			"title": "Time to say goodbye to Photoshop?",
-			"speaker": "Erik Friberg",
-			"timeId": 1,
-			"time": "10.45-11.10",
-			"date": "SEP 13",
-			"location": "Rødskjær",
-			"country": "Sweden"
-		},
-		{
-			"categoryId": 4,
-			"title": "Service design: Differentiate or die",
-			"speaker": "Erlend Hovgaard",
-			"timeId": 1,
-			"time": "10.45-11.10",
-			"date": "SEP 13",
-			"location": "Suite 301",
-			"country": "Norway"
-		},
-		{
-			"categoryId": 5,
-			"title": "Everybody is a salesman",
-			"speaker": "Lonitz & Lyreskog",
-			"timeId": 1,
-			"time": "10.45-11.10",
-			"date": "SEP 13",
-			"location": "Suite 106",
-			"country": "Sweden"
-		},
-		{
-			"categoryId": 6,
-			"title": "Advertising – it used to be a good idea",
-			"speaker": "Anders Aunbu",
-			"timeId": 1,
-			"time": "10.45-11.10",
-			"date": "SEP 13",
-			"location": "Skåtøy 2",
-			"country": "Norway"
-		},
-
 		{
 			"categoryId": 1,
-			"title": "Visualising (web analytics) data",
-			"speaker": "Robert Børlum-Bach",
-			"timeId": 2,
-			"time": "11.15-11.40",
-			"date": "SEP 13",
-			"location": "Grupperom 2",
+			"title": "Brand persona",
+			"speaker": "Sara Marie Alvad & Helle Jensen",
+			"timeId": 1,
+			"time": "10.45-11.10",
+			"date": "SEP 12",
+			"location": "Skåtøy 2",
 			"country": "Denmark"
 		},
 		{
 			"categoryId": 2,
-			"title": "Test and test automatization",
-			"speaker": "Aliye Furunzhyieva",
-			"timeId": 2,
-			"time": "11.15-11.40",
-			"date": "SEP 13",
-			"location": "Skåtøy 1",
-			"country": "Sweden"
+			"title": "Continuous value delivery",
+			"speaker": "Pavel Nezhencev & Renat Khasanshin",
+			"timeId": 1,
+			"time": "10.45-11.10",
+			"date": "SEP 12",
+			"location": "Rødskjær",
+			"country": "Denmark"
 		},
 		{
 			"categoryId": 3,
-			"title": "The endless possibilities of PowerPoint. Creuna’s PPT-template unleashed",
-			"speaker": "Hans Haugli",
-			"timeId": 2,
-			"time": "11.15-11.40",
-			"date": "SEP 13",
-			"location": "Rødskjær",
+			"title": "Business Model Canvas",
+			"speaker": "Torbjørn Sitre & Beate Alm",
+			"timeId": 1,
+			"time": "10.45-11.10",
+			"date": "SEP 12",
+			"location": "Suite 106",
 			"country": "Norway"
 		},
 		{
 			"categoryId": 4,
-			"title": "Emotions in UX, the embryo of new business?",
-			"speaker": "Therese Glimskär",
-			"timeId": 2,
-			"time": "11.15-11.40",
-			"date": "SEP 13",
+			"title": "How to know if your results are good or bad",
+			"speaker": "Henric Folke & Jonas Franklin",
+			"timeId": 1,
+			"time": "10.45-11.10",
+			"date": "SEP 12",
 			"location": "Suite 301",
 			"country": "Sweden"
 		},
 		{
 			"categoryId": 5,
-			"title": "Wicked Problems",
-			"speaker": "Ole Morten Damlien",
+			"title": "Digital roadmaps",
+			"speaker": "Kristoffer Okkels & Mikkel Olesen",
+			"timeId": 1,
+			"time": "10.45-11.10",
+			"date": "SEP 12",
+			"location": "Grupperom 1",
+			"country": "Denmark"
+		},
+
+		{
+			"categoryId": 0,
+			"title": "From e-commerce to commerce",
+			"speaker": "John Aurtande",
 			"timeId": 2,
 			"time": "11.15-11.40",
-			"date": "SEP 13",
-			"location": "Suite 106",
+			"date": "SEP 12",
+			"location": "Skåtøy 1",
 			"country": "Norway"
 		},
 		{
-			"categoryId": 6,
-			"title": "Branding in the digital economy - whats at stake? ",
+			"categoryId": 1,
+			"title": "How to design better services",
+			"speaker": "Noni Løvvik",
+			"timeId": 2,
+			"time": "11.15-11.40",
+			"date": "SEP 12",
+			"location": "Skåtøy 2",
+			"country": "Norway"
+		},
+		{
+			"categoryId": 2,
+			"title": "Automate your deployments using Octopus Deploy",
+			"speaker": "Niklas Engberg",
+			"timeId": 2,
+			"time": "11.15-11.40",
+			"date": "SEP 12",
+			"location": "Rødskjær",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 3,
+			"title": "Future business models",
+			"speaker": "Martin Deinoff",
+			"timeId": 2,
+			"time": "11.15-11.40",
+			"date": "SEP 12",
+			"location": "Suite 106",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 4,
+			"title": "Taming the TROLL",
+			"speaker": "Andre Sylte & Torbjørn Sitre",
+			"timeId": 2,
+			"time": "11.15-11.40",
+			"date": "SEP 12",
+			"location": "Suite 301",
+			"country": "Norway"
+		},
+		{
+			"categoryId": 5,
+			"title": "How to sell a big idea",
+			"speaker": "Stein Sørlie",
+			"timeId": 2,
+			"time": "11.15-11.40",
+			"date": "SEP 12",
+			"location": "Grupperom 1",
+			"country": "Norway"
+		},
+
+		{
+			"categoryId": 0,
+			"title": "Ten tips on starting an e-commerce project in an omni-channel environment",
+			"speaker": "Joakim Taraldsson",
+			"timeId": 3,
+			"time": "11.45-12.10",
+			"date": "SEP 12",
+			"location": "Skåtøy 1",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 1,
+			"title": "Great UX is not enough",
+			"speaker": "John Beijar & Daniel Leinerud",
+			"timeId": 3,
+			"time": "11.45-12.10",
+			"date": "SEP 12",
+			"location": "Skåtøy 2",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 2,
+			"title": "Communication meets tech",
+			"speaker": "Petter Andersen & Oskar Bringager",
+			"timeId": 3,
+			"time": "11.45-12.10",
+			"date": "SEP 12",
+			"location": "Rødskjær",
+			"country": "Norway"
+		},
+		{
+			"categoryId": 3,
+			"title": "Digital Business Transformation - its about business and people",
 			"speaker": "Michael Ericsson",
-			"timeId": 2,
-			"time": "11.15-11.40",
-			"date": "SEP 13",
-			"location": "Skåtøy 2",
+			"timeId": 3,
+			"time": "11.45-12.10",
+			"date": "SEP 12",
+			"location": "Suite 106",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 4,
+			"title": "Quality Assurance - The Elevator Pitch Version",
+			"speaker": "Ingela Hagman",
+			"timeId": 3,
+			"time": "11.45-12.10",
+			"date": "SEP 12",
+			"location": "Suite 301",
+			"country": "Sweden"
+		},
+		{
+			"categoryId": 5,
+			"title": "Getting off to a good (Creuna) Start",
+			"speaker": "Karin Engström",
+			"timeId": 3,
+			"time": "11.45-12.10",
+			"date": "SEP 12",
+			"location": "Grupperom 1",
 			"country": "Sweden"
 		},
 
 		{
 			"categoryId": 0,
-			"title": "Best practice processes and devOps",
-			"speaker": "Pelle Bjerkestrand",
-			"timeId": 3,
-			"time": "11.45-12.10",
-			"date": "SEP 13",
-			"location": "Grupperom 1",
-			"country": "Norway"
-		},
-		{
-			"categoryId": 2,
-			"title": "EPiServer Commerce, the Hard Way",
-			"speaker": "Janne Tuutti",
-			"timeId": 3,
-			"time": "11.45-12.10",
-			"date": "SEP 13",
+			"title": "Beacon demo",
+			"speaker": "Eirik Norman Hansen",
+			"timeId": 4,
+			"time": "12.15-12.40",
+			"date": "SEP 12",
 			"location": "Skåtøy 1",
-			"country": "Finland"
-		},
-		{
-			"categoryId": 3,
-			"title": "Exploring imaginary universes with 3D-tools",
-			"speaker": "Sebastian Reed",
-			"timeId": 3,
-			"time": "11.45-12.10",
-			"date": "SEP 13",
-			"location": "Rødskjær",
 			"country": "Norway"
 		},
-		{
-			"categoryId": 4,
-			"title": "Three signs saying that you’re working on a service design project (and one that you’re not)",
-			"speaker": "Jacob Palicki",
-			"timeId": 3,
-			"time": "11.45-12.10",
-			"date": "SEP 13",
-			"location": "Suite 301",
-			"country": "Sweden"
-		},
-		{
-			"categoryId": 5,
-			"title": "Drop the estimate tyranny and get more motivated Creuna employees and increased predictability",
-			"speaker": "Jesper Boeg",
-			"timeId": 3,
-			"time": "11.45-12.10",
-			"date": "SEP 13",
-			"location": "Suite 106",
-			"country": "Denmark"
-		},
-		{
-			"categoryId": 6,
-			"title": "Brand and user experience – a love story",
-			"speaker": "Torbjørn Sitre",
-			"timeId": 3,
-			"time": "11.45-12.10",
-			"date": "SEP 13",
-			"location": "Skåtøy 2",
-			"country": "Norway"
-		},
-
 		{
 			"categoryId": 1,
-			"title": "Measuring the world",
-			"speaker": "Thor Fjeldberg",
+			"title": "An introduction to business value mapping",
+			"speaker": "Monica Östling Holmlund",
 			"timeId": 4,
 			"time": "12.15-12.40",
-			"date": "SEP 13",
-			"location": "Grupperom 2",
-			"country": "Norway"
+			"date": "SEP 12",
+			"location": "Skåtøy 2",
+			"country": "Sweden"
 		},
 		{
 			"categoryId": 2,
-			"title": "Django - The Web framework for perfectionists with deadlines",
-			"speaker": "Matti Kotsalainen",
+			"title": "Looking for your aaS?",
+			"speaker": "Bo Petersen & Ali Razvi",
 			"timeId": 4,
 			"time": "12.15-12.40",
-			"date": "SEP 13",
-			"location": "Skåtøy 1",
-			"country": "Sweden"
+			"date": "SEP 12",
+			"location": "Rødskjær",
+			"country": "Denmark"
 		},
 		{
 			"categoryId": 3,
-			"title": "Spotify om visuell design och kreativitet intranät",
-			"speaker": "Fredrik Marcus",
-			"timeId": 4,
-			"time": "12.15-12.40",
-			"date": "SEP 13",
-			"location": "Rødskjær",
-			"country": "Sweden"
-		},
-		{
-			"categoryId": 4,
-			"title": "The meaning of the word",
-			"speaker": "Bakke & Nausthaug",
+			"title": "Content is king. Content is a Creuna thing.",
+			"speaker": "Olav Nausthaug",
 			"time": "12.15-12.40",
 			"timeId": 4,
-			"date": "SEP 13",
-			"location": "Suite 301",
+			"date": "SEP 12",
+			"location": "Suite 106",
 			"country": "Norway"
 		},
 		{
-			"categoryId": 5,
-			"title": "High Level Project Management (evil clients) How to be evil without being bad",
-			"speaker": "Christer Lybeck",
+			"categoryId": 4,
+			"title": "Conversion Rate Optimization - old wine in new bottles is still tasty as hell!",
+			"speaker": "Jacob Hartung",
 			"timeId": 4,
 			"time": "12.15-12.40",
-			"date": "SEP 13",
-			"location": "Suite 106",
-			"country": "Finland"
+			"date": "SEP 12",
+			"location": "Suite 301",
+			"country": "Denmark"
 		},
 		{
-			"categoryId": 6,
-			"title": "Meeting empowered B2B-customers with digital services",
-			"speaker": "Elkjær & Okkels",
+			"categoryId": 5,
+			"title": "The art of integration",
+			"speaker": "Torbjørn Sitre",
 			"timeId": 4,
 			"time": "12.15-12.40",
-			"date": "SEP 13",
-			"location": "Skåtøy 2",
-			"country": "Denmark"
+			"date": "SEP 12",
+			"location": "Grupperom 1",
+			"country": "Norway"
 		}
 
 
